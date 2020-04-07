@@ -1,0 +1,14 @@
+{
+  "name": "weight-checker",
+  "version": "1.0.0",
+  "description": "To check weight",
+  "main": "index.js",
+  "scripts": {
+    "check": "node-sass sass/main.scss main/css/main.css "
+  },
+  "author": "petersheg",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

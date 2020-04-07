@@ -1,0 +1,178 @@
+@import "mixin.scss";
+//UTILITY
+.heading{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+//NAV SESSION
+.nav{
+    background-color:rgba($color:  #0A0059, $alpha: .9);
+    padding:0 10rem;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+
+    @include respond(tab-port){
+        padding: 0 5rem;
+        
+    }
+
+    @include respond(phone){
+        position: relative;
+    }
+
+    display: flex;
+    justify-content: space-between;
+
+    &_brand{
+        text-transform: capitalize;
+        color: white;
+        font-size: 4.5rem;
+        color:  #39D442;
+        font-weight: 700;
+
+        @include respond(tab-port){
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+    }
+
+    &_text{
+        @include respond(phone){
+            position: relative;
+        }
+    }
+    &_list{
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem;
+        list-style: none;
+
+        @include respond(phone){
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
+
+    &_item,a{
+        justify-self: auto;
+        text-decoration: none;
+        padding: .8rem;
+        color: white;
+        font-weight: 500;
+    }
+}
+
+.nav_item:hover{
+    background-color: #39D442;
+    border-radius: 2.5rem;
+}
+
+//HERO SESSION
+.hero{
+    position: relative;
+    height: 80vh;
+    background-image: linear-gradient(to top right,rgba(#0A0059,.6),rgba(#0A0059,.4)),
+    url(../imagezz/IMG_7965.JPG);
+
+    background-size: 100%;
+
+    &_para{
+        color: white;
+        margin-bottom: 1.5rem;
+
+    }
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.btn{
+    padding:.8rem 2rem;
+    background-color:#39D442 ;
+    border-radius: 2.5rem;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+}
+
+//SESSION FEATURE
+.features{
+    padding: 10rem 5rem;
+
+    &_box{
+        margin: auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+
+        @include respond(tab-port){
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &_one{
+        padding: 2rem;
+        background-color: #E7EAED;
+        border-radius: 1rem;
+        max-width: 30%;
+        box-shadow: 1rem 2rem 1rem rgba(#0A0059,.4);
+
+        @include respond(tab-port){
+            max-width: 50%;
+            margin-bottom:2rem;
+        }
+    }
+
+    &_icon{
+        background-image: linear-gradient(rgba(#0A0059,.9),rgba(#0A0059,.6));
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &_heading{
+        margin: .9rem 0;
+        text-transform: capitalize;
+    }
+
+    &_para{
+        margin: 2rem;
+        font-size: 2rem;
+    }
+}
+
+//FOOTER
+.footer{
+    background-color: #252526;
+    padding: 4rem 2.5rem;
+
+    &_con{
+        border-bottom: solid 1px #2bc50c;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    i{
+        padding: 1rem;
+    }
+}
+
+.brand{
+    text-align: center;
+    color: grey;
+}
+.resize{
+    text-align: center;
+    font-size: 4rem;
+}

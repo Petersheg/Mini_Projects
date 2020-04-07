@@ -1,0 +1,37 @@
+@import "secssions.scss";
+@import "signUp.scss";
+@import "mixin.scss";
+
+//BASE FORMATING
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+
+    //for Tab-Landscape
+    @include respond(tab-land){
+        font-size: 56.5%;
+    }
+
+    //for Tab Portrait
+    @include respond(tab-port){
+        font-size: 50%;
+    }
+
+    //for phnone
+    @include respond(phone){
+        font-size: 46.5%;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    
+}

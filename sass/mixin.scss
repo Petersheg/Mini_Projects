@@ -1,0 +1,22 @@
+//MIXING FOR MEDIA QUERY
+@mixin respond($type) {
+
+    @if $type==tab-land{
+        @media (max-width:1200px){
+            @content;
+        }
+    }
+
+    @if $type==tab-port{
+        @media (max-width:900px){
+            @content;
+        }
+    }
+
+        
+    @if $type==phone{
+        @media (max-width:600px){
+            @content;
+        }
+    }  
+} 

@@ -6,14 +6,17 @@
 .nav {
   background-color: rgba(10, 0, 89, 0.9);
   padding: 0 10rem;
-  position: absolute;
+  position: relative;
   width: 100%;
   z-index: 100;
   display: flex;
   justify-content: space-between; }
   @media (max-width: 900px) {
     .nav {
-      padding: 0 5rem; } }
+      position: absolute;
+      padding: 0 5rem;
+      display: flex;
+      flex-direction: column; } }
   @media (max-width: 600px) {
     .nav {
       position: relative; } }
@@ -26,7 +29,8 @@
     @media (max-width: 900px) {
       .nav_brand {
         font-size: 3.5rem;
-        font-weight: 400; } }
+        font-weight: 400;
+        text-align: center; } }
   @media (max-width: 600px) {
     .nav_text {
       position: relative; } }
@@ -37,10 +41,7 @@
     list-style: none; }
     @media (max-width: 600px) {
       .nav_list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); } }
+        padding: 1rem; } }
   .nav_item, .nav a {
     justify-self: auto;
     text-decoration: none;
@@ -128,7 +129,7 @@
   font-size: 4rem; }
 
 .signupForm {
-  padding: 9rem 2rem;
+  padding: 3rem 2rem;
   background-color: rgba(2, 167, 255, 0.7); }
 
 .green {

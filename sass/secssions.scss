@@ -10,12 +10,15 @@
 .nav{
     background-color:rgba($color:  #0A0059, $alpha: .9);
     padding:0 10rem;
-    position: absolute;
+    position: relative;
     width: 100%;
     z-index: 100;
 
     @include respond(tab-port){
+        position: absolute;
         padding: 0 5rem;
+        display: flex;
+        flex-direction: column;
         
     }
 
@@ -36,6 +39,8 @@
         @include respond(tab-port){
             font-size: 3.5rem;
             font-weight: 400;
+            text-align: center;
+            
         }
     }
 
@@ -50,12 +55,26 @@
         padding: 2rem;
         list-style: none;
 
-        @include respond(phone){
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
+         @include respond(phone){
+            padding: 1rem;
+         }
+
+        // @include respond(phone){
+        //     position: absolute;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%,-10%);
+        // }
+
+        // @include respond(tab-port){
+        //     position: absolute;
+        //     display: flex;
+        //     flex-direction: column;
+        //     top: 50%;
+        //     left: 50%;
+        //     transform: translate(-50%,0%);
+            
+        // }
     }
 
     &_item,a{

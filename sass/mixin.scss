@@ -19,4 +19,48 @@
             @content;
         }
     }  
-} 
+}
+
+//OTHER MIXIN
+@mixin blend{
+    background-image: linear-gradient(rgba(#0A0059,.9),rgba(#0A0059,.6));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+@mixin  tShadow {
+    text-shadow: .5rem .5rem .5rem gray;
+}
+
+@keyframes topDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-50%);
+    }
+    50%{
+        transform: translateY(50%);
+    }
+    80%{
+        transform: rotateY(80deg);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes bottomUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-50%);
+    }
+    80%{
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+

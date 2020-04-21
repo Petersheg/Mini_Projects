@@ -1,6 +1,7 @@
 @import "secssions.scss";
 @import "signUp.scss";
 @import "mixin.scss";
+@import "about.scss";
 
 //BASE FORMATING
 *,*::before,*::after{
@@ -10,6 +11,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 
     //for Tab-Landscape
     @include respond(tab-land){

@@ -3,14 +3,19 @@
 .heading{
     text-transform: uppercase;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+    @include blend
+}
+
+.U-mb{
+    margin-bottom: 13rem;
 }
 
 //NAV SESSION
 .nav{
     background-color:rgba($color:  #0A0059, $alpha: .9);
     padding:0 10rem;
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 100;
 
@@ -91,10 +96,18 @@
     border-radius: 2.5rem;
 }
 
+a:active{
+    background-color: #39D442;
+    border-radius: 2.5rem;
+}
+
 //HERO SESSION
 .hero{
     position: relative;
     height: 80vh;
+    @include respond(tab-port){
+        height: 70vh;
+    }
     background-image: linear-gradient(to top right,rgba(#0A0059,.6),rgba(#0A0059,.4)),
     url(../imagezz/IMG_7965.JPG);
 
@@ -102,8 +115,24 @@
 
     &_para{
         color: white;
-        margin-bottom: 1.5rem;
+        margin-bottom: 4rem;
+        text-transform: uppercase;
+        font-size: 4rem;
+        opacity: .8;
+        @include respond(tab-port){
+            font-size: 3rem;
+        }
+        &-1{
+            color: white;
+            display: block;
+            letter-spacing: .2rem;
+            animation: topDown 3s ease-in;
+        }
 
+        &-2{
+            display: block;
+            animation: bottomUp 3s ease-out;
+        }
     }
 }
 
@@ -140,6 +169,7 @@
         }
     }
 
+
     &_one{
         padding: 2rem;
         background-color: #E7EAED;
@@ -150,24 +180,29 @@
         @include respond(tab-port){
             max-width: 50%;
             margin-bottom:2rem;
+            padding: 1rem;
+        }
+
+        @include respond(phone){
+            max-width: 100%;
+            margin-bottom:4rem;
         }
     }
 
     &_icon{
-        background-image: linear-gradient(rgba(#0A0059,.9),rgba(#0A0059,.6));
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
+        @include blend
     }
 
     &_heading{
         margin: .9rem 0;
         text-transform: capitalize;
+        font-size: 4rem;
+        @include blend
     }
 
     &_para{
         margin: 2rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -176,8 +211,16 @@
     background-color: #252526;
     padding: 4rem 2.5rem;
 
-    &_con{
+    .contact{
         border-bottom: solid 1px #2bc50c;
+        display: flex;
+        justify-content: space-evenly;
+        @include respond(phone){
+            flex-direction: column;
+        }
+    }
+
+    &_con{
         text-align: center;
         padding: 2rem;
     }
@@ -190,6 +233,10 @@
 .brand{
     text-align: center;
     color: grey;
+    &-head{
+        font-size: 2.5rem;
+        text-transform: capitalize;
+    }
 }
 .resize{
     text-align: center;

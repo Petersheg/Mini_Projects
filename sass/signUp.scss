@@ -1,10 +1,18 @@
 
 .signupForm{
-    padding: 3rem 2rem;
-    background-color: rgba(#02A7FF,.7);
+    padding: 14rem 2rem;
+    background-color: rgba(#02A7FF,.4);
+    @include respond(phone){
+        padding: 3rem 2rem;
+    }
 }
 
-
+#uMessage{
+    margin-left: 7.5rem;
+    @include respond(phone){
+        margin: auto;
+    }
+}
 .green{
     color: rgb(75, 5, 238);
     background-color:rgba(white,.7);
@@ -35,7 +43,6 @@
 
 .label{
     font-size: 1.5rem;
-    margin-left: 2rem;
     margin-top: .7rem;
     font-weight: 500;
     transition: all .3s;
@@ -65,6 +72,7 @@
     @include respond(phone){
         width: 90%;
         margin-left: 0;
+        margin-bottom: 2rem;
     }
 }
 

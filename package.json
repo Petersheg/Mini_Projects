@@ -4,7 +4,7 @@
   "description": "To check weight",
   "main": "index.js",
   "scripts": {
-    "check": "node-sass sass/main.scss main/css/main.css --w"
+    "check": "node-sass sass/main.scss main/css/main.css"
   },
   "author": "petersheg",
   "license": "ISC",

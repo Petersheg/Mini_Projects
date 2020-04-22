@@ -65,7 +65,7 @@
       position: relative; } }
   .nav_list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 2rem;
     list-style: none; }
     @media (max-width: 600px) {
@@ -74,7 +74,7 @@
   .nav_item, .nav a {
     justify-self: auto;
     text-decoration: none;
-    padding: .8rem;
+    padding: .5rem;
     color: white;
     font-weight: 500; }
 

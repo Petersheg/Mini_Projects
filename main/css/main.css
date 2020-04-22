@@ -248,7 +248,9 @@ a:active {
 .inputOne {
   padding: 1rem 0;
   margin-left: 1rem; }
-
+   @media (max-width: 600px) {
+    .inputOne span{
+      background-color:white; } }
 .subtn {
   padding: 1rem;
   border: none;

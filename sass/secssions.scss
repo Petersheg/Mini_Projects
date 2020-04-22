@@ -6,6 +6,10 @@
     margin-bottom: 4rem;
     @include blend
 }
+.tdn{
+    text-decoration: none;
+    color:  #39D442;
+}
 
 .U-mb{
     margin-bottom: 13rem;
@@ -64,22 +68,6 @@
             padding: 1rem;
          }
 
-        // @include respond(phone){
-        //     position: absolute;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%,-10%);
-        // }
-
-        // @include respond(tab-port){
-        //     position: absolute;
-        //     display: flex;
-        //     flex-direction: column;
-        //     top: 50%;
-        //     left: 50%;
-        //     transform: translate(-50%,0%);
-            
-        // }
     }
 
     &_item,a{
@@ -94,12 +82,13 @@
 .nav_item:hover{
     background-color: #39D442;
     border-radius: 2.5rem;
+
+    a:active{
+        background-color: #39D442;
+        border-radius: 2.5rem;
+    }
 }
 
-a:active{
-    background-color: #39D442;
-    border-radius: 2.5rem;
-}
 
 //HERO SESSION
 .hero{
@@ -110,8 +99,7 @@ a:active{
     }
     background-image: linear-gradient(to top right,rgba(#0A0059,.6),rgba(#0A0059,.4)),
     url(../imagezz/IMG_7965.JPG);
-
-    background-size: 100%;
+    background-repeat:no-repeat;
 
     &_para{
         color: white;

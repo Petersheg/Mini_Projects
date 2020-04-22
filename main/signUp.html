@@ -11,12 +11,12 @@
 </head>
 <body>
     <section class="nav">
-            <div class="nav_brand">Peter-Shegz</div>
+            <div class="nav_brand"><a href="index.html" class="tdn" style="color:  #39D442;">Peter-Shegz</a></div>
             <div class="nav_text">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="index.html" class="nav_list-link">Home</a></li>
-                    <li class="nav_item"><a href="aboutMe.html" class="nav_list-link">About Me</a></li>
-                    <li class="nav_item"><a href="signUp.html" class="nav_list-link">Message Me</a></li>
+                    <li class="nav_item"><a href="aboutMe.html" class="nav_list-link">About</a></li>
+                    <li class="nav_item"><a href="signUp.html" class="nav_list-link">Hire Me</a></li>
                 </ul>
             </div>
         </section>
@@ -27,7 +27,13 @@
         <div class="book">
             <div class="inputOne">
                 <label class="label" for="fName">Name</label>
-                <input type="text" name="fName" id="fName" class="input" placeholder="Type Your Name/Anonymous" required>
+                <input type="text" name="fName" id="fName" class="input" placeholder="Name/Anonymous" required>
+                <div><small style="opacity: .8;">Type Your Name/Anonymous</small></div>
+            </div>
+            <div class="inputOne">
+                <label class="label" for="pNum">Phone</label>
+                <input type="tel" name="pNum" id="pNum" class="input" placeholder="08012121212" pattern="[0-9]{11}">
+                <div><small style="opacity: .8;">Inviting me for a work? Your Number</small></div>
             </div>
             <div class="inputOne">
                 <textarea name="uMessage" id="uMessage" class="input" cols="30" rows="10" placeholder="Leave a Suggestion or Invite me for a work" required></textarea>
@@ -40,7 +46,7 @@
     </form>
 
     <footer class="footer">
-        <div class="nav_brand resize">Peter-Shegz</div>
+        <div class="nav_brand"><a href="index.html" class="nav_brand tdn">Peter-Shegz</a></div>
         <div class="contact">
             <div class="footer_con">
                 <a href="https://facebook.com/petersheg"><i class="fa fa-facebook fa-2x features_icon" aria-hidden="true"></i></a>

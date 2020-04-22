@@ -249,7 +249,7 @@ a:active {
   padding: 1rem 0;
   margin-left: 1rem; }
    @media (max-width: 600px) {
-    .span{
+   .inputOne .span{
       color:white; } }
 .subtn {
   padding: 1rem;

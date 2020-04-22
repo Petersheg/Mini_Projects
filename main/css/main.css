@@ -249,8 +249,8 @@ a:active {
   padding: 1rem 0;
   margin-left: 1rem; }
    @media (max-width: 600px) {
-   .inputOne .span{
-      color:white; } }
+   .inputOne .span {
+      color : white; } }
 .subtn {
   padding: 1rem;
   border: none;

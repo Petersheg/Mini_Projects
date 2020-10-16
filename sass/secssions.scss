@@ -98,14 +98,14 @@
         height: 70vh;
     }
     background-image: linear-gradient(to top right,rgba(#0A0059,.6),rgba(#0A0059,.4)),
-    url(../imagezz/IMG_7965.JPG);
+    url(../imagezz/tech_banner.jpg);
     background-repeat:no-repeat;
 
     &_para{
         color: white;
         margin-bottom: 4rem;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 3rem;
         opacity: .8;
         @include respond(tab-port){
             font-size: 3rem;
@@ -124,7 +124,7 @@
     }
 }
 
-.container{
+.containerr{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -141,6 +141,42 @@
     text-transform: capitalize;
 }
 
+
+// SESSION PORTFOLIO
+.porfolio{
+    padding: 10rem 5rem;
+    background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.9), rgba(10, 0, 89, 0.9)), url(../imagezz/tech_banner.jpg);
+    background-repeat: no-repeat;
+    height: auto;
+    color: white;
+    &_heading{
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 4rem;
+        color: white;
+    }
+
+    &_img:hover{
+            outline: .2rem solid #39D442;
+            box-shadow: 0 2rem 2rem rgba(black,.7);
+            outline-offset: .5rem;
+            transform: scale(1.1);
+            transition: all .8s;
+    }
+
+    .mt-top{
+        margin-top: 4rem;
+    }
+
+    .para{
+        text-transform: capitalize;
+        padding: 1rem;
+        background-color:rgba(10, 0, 89, 0.925);
+        display: inline-block;
+        color: white;
+    }
+}
+
 //SESSION FEATURE
 .features{
     padding: 10rem 5rem;
@@ -149,11 +185,12 @@
         margin: auto;
         text-align: center;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
 
         @include respond(tab-port){
             flex-direction: column;
-            align-items: center;
+            align-content: center;
         }
     }
 
@@ -215,6 +252,7 @@
 
     i{
         padding: 1rem;
+        color: white;
     }
 }
 

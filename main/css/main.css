@@ -69,7 +69,7 @@
       position: relative; } }
   .nav_list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
     list-style: none; }
     @media (max-width: 600px) {
@@ -78,7 +78,7 @@
   .nav_item, .nav a {
     justify-self: auto;
     text-decoration: none;
-    padding: .5rem;
+    padding: .8rem;
     color: white;
     font-weight: 500; }
 
@@ -92,7 +92,7 @@
 .hero {
   position: relative;
   height: 80vh;
-  background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.6), rgba(10, 0, 89, 0.4)), url(../imagezz/IMG_7965.JPG);
+  background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.6), rgba(10, 0, 89, 0.4)), url(../imagezz/tech_banner.jpg);
   background-repeat: no-repeat; }
   @media (max-width: 900px) {
     .hero {
@@ -101,7 +101,7 @@
     color: white;
     margin-bottom: 4rem;
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 3rem;
     opacity: .8; }
     @media (max-width: 900px) {
       .hero_para {
@@ -115,7 +115,7 @@
       display: block;
       animation: bottomUp 3s ease-out; }
 
-.container {
+.containerr {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -130,17 +130,44 @@
   color: white;
   text-transform: capitalize; }
 
+.porfolio {
+  padding: 10rem 5rem;
+  background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.9), rgba(10, 0, 89, 0.9)), url(../imagezz/tech_banner.jpg);
+  background-repeat: no-repeat;
+  height: auto;
+  color: white; }
+  .porfolio_heading {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: white; }
+  .porfolio_img:hover {
+    outline: .2rem solid #39D442;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.7);
+    outline-offset: .5rem;
+    transform: scale(1.1);
+    transition: all .8s; }
+  .porfolio .mt-top {
+    margin-top: 4rem; }
+  .porfolio .para {
+    text-transform: capitalize;
+    padding: 1rem;
+    background-color: rgba(10, 0, 89, 0.925);
+    display: inline-block;
+    color: white; }
+
 .features {
   padding: 10rem 5rem; }
   .features_box {
     margin: auto;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between; }
     @media (max-width: 900px) {
       .features_box {
         flex-direction: column;
-        align-items: center; } }
+        align-content: center; } }
   .features_one {
     padding: 2rem;
     background-color: #E7EAED;
@@ -187,7 +214,8 @@
     text-align: center;
     padding: 2rem; }
   .footer i {
-    padding: 1rem; }
+    padding: 1rem;
+    color: white; }
 
 .brand {
   text-align: center;
@@ -202,7 +230,8 @@
 
 .signupForm {
   padding: 14rem 2rem;
-  background-color: rgba(2, 167, 255, 0.4); }
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white; }
   @media (max-width: 600px) {
     .signupForm {
       padding: 3rem 2rem; } }
@@ -263,7 +292,7 @@
   background-color: #39D442;
   color: white;
   margin-left: 2rem;
-  box-shadow: 0 1rem 2rem rgba(2, 167, 255, 0.7); }
+  box-shadow: 0 1rem 2rem rgba(255, 255, 255, 0.7); }
   @media (max-width: 600px) {
     .subtn {
       width: 90%;
@@ -271,7 +300,7 @@
       margin-bottom: 2rem; } }
 
 .book {
-  background-image: linear-gradient(109deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 74%), url(../imagezz/IMG_7950.JPG);
+  background-image: linear-gradient(109deg, rgba(10, 0, 89, 0.9) 0%, rgba(10, 0, 89, 0.9) 50%, transparent 74%), url(../imagezz/codes.jpg);
   background-size: 100%;
   padding: 4rem;
   border-radius: .5rem; }
@@ -299,7 +328,7 @@
     opacity: 1; } }
 
 .section_about {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.774), rgba(255, 255, 255, 0.774)), url("../imagezz/IMG_7965.JPG");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)), url("../imagezz/program.jpg");
   background-size: cover;
   padding: 18rem 0; }
   .section_about-para {

@@ -92,8 +92,10 @@
 .hero {
   position: relative;
   height: 80vh;
-  background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.6), rgba(10, 0, 89, 0.4)), url(../imagezz/tech_banner.jpg);
-  background-repeat: no-repeat; }
+  background-image: linear-gradient(to top right, rgba(10, 0, 89, 0.6), rgba(10, 0, 89, 0.4)), url(../imagezz/newBanner.jpg);
+  background-repeat: no-repeat; 
+  background-size: cover;
+  }
   @media (max-width: 900px) {
     .hero {
       height: 70vh; } }

@@ -1,2 +1,6 @@
-# Mini_Projects
-This project is just a result of practice, and not really a functioning web apps. 
+# SinglePage_Project.
+This project was initiated base on the request for a Single page application by Bincom Tech company.
+The project is to include the content of my CV and also my portfolio (if available),
+
+#### Project Purpose 
+The Purpose of the project is to test my knowledge about Html, Css and Javascript.

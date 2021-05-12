@@ -39,11 +39,19 @@
 .nav {
   background-color: rgba(10, 0, 89, 0.9);
   padding: 0 10rem;
-  position: fixed;
   width: 100%;
   z-index: 100;
   display: flex;
   justify-content: space-between; }
+  .nav_fix{
+    background-color: rgba(10, 0, 89, 0.9);
+    padding: 0 10rem;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+  }
   @media (max-width: 900px) {
     .nav {
       position: absolute;
@@ -84,11 +92,12 @@
 
 .nav_item:hover {
   background-color: #39D442;
-  border-radius: 2.5rem; }
-  .nav_item:hover a:active {
-    background-color: #39D442;
-    border-radius: 2.5rem; }
+  border-radius: 1.5rem; }
 
+  .nav_item-active{
+    background-color: #39D442;
+    border-radius: 2.5rem;
+  }
 .hero {
   position: relative;
   height: 80vh;
@@ -329,6 +338,13 @@
   100% {
     opacity: 1; } }
 
+.section_hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.section{
+  transition: transform 1s, opacity 1s;
+}
 .section_about {
   background-image: linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.849)), url("../imagezz/program.jpg");
   background-size: cover;

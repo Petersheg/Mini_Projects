@@ -5,6 +5,40 @@ const nav = document.querySelector('.nav')
 const sections = document.querySelectorAll('.section');
 
 class Animate{
+
+    activeOnScroll4All(section){
+        let elToObsserve = document.querySelector(`#${section}`);
+        
+        elToObsserve.classList.contains('hero') ? '' : elToObsserve.classList.add('section_hidden');
+    
+        console.log(elToObsserve);
+        const intersetCallBack = function(enteries){
+            const [entry] = enteries;
+            let id = entry.target.id
+            let elToActive = document.querySelector(`.${id}`);
+    
+            if(entry.isIntersecting === true) {
+                li.forEach(el=>{
+                    el.classList.remove('nav_item-active')
+                });
+    
+                elToActive.classList.add('nav_item-active');
+                elToObsserve.classList.remove('section_hidden');
+            }else{
+                elToActive.classList.remove('nav_item-active');
+            }
+        }
+    
+        const intersetOpts = {
+            root:null,
+            rootMargin:'-150px',
+            threshold:0.1
+        };
+        const observe = new IntersectionObserver(intersetCallBack,intersetOpts);
+    
+        observe.observe(elToObsserve)
+    }
+
     activeNavItem(){
         ul.addEventListener('click',(e)=>{
             e.preventDefault();
@@ -52,44 +86,10 @@ class Animate{
     }
 }
 
-function activeOnScroll4All(section){
-    let elToObsserve = document.querySelector(`#${section}`);
-    
-    elToObsserve.classList.contains('hero') ? '' : elToObsserve.classList.add('section_hidden');
-
-    console.log(elToObsserve);
-    const intersetCallBack = function(enteries){
-        const [entry] = enteries;
-        let id = entry.target.id
-        let elToActive = document.querySelector(`.${id}`);
-
-        if(entry.isIntersecting === true) {
-            li.forEach(el=>{
-                el.classList.remove('nav_item-active')
-            });
-
-            elToActive.classList.add('nav_item-active');
-            elToObsserve.classList.remove('section_hidden');
-        }else{
-            elToActive.classList.remove('nav_item-active');
-        }
-    }
-
-    const intersetOpts = {
-        root:null,
-        rootMargin:'-150px',
-        threshold:0.1
-    };
-    const observe = new IntersectionObserver(intersetCallBack,intersetOpts);
-
-    observe.observe(elToObsserve)
-}
-
-sections.forEach(section=>{
-    activeOnScroll4All(`${section.id}`);
-})
-
 const animate = new Animate;
 animate.activeNavItem();
-animate.fixNavOnScroll()
+animate.fixNavOnScroll();
 
+sections.forEach(section=>{
+    animate.activeOnScroll4All(`${section.id}`);
+});

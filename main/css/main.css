@@ -90,13 +90,12 @@
     color: white;
     font-weight: 500; }
 
-.nav_item:hover {
-  background-color: #39D442;
-  border-radius: 1.5rem; }
+.nav_list-link:hover {
+  color: #39D442;
+}
 
   .nav_item-active{
-    background-color: #39D442;
-    border-radius: 2.5rem;
+    border-bottom:1px solid #39D442;
   }
 .hero {
   position: relative;

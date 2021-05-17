@@ -3,4 +3,4 @@ This project was initiated base on the request for a Single page application by 
 The project is to include the content of my CV and also my portfolio (if available),
 
 #### Project Purpose 
-The Purpose of the project is to test my knowledge about Html, Css and Javascript.
+The Purpose of the project is to test my knowledge on Html, Css and Javascript.
